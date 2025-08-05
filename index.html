@@ -39,13 +39,33 @@
     a:hover {
       opacity: 0.8;
     }
+    .inline-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 10px 0;
+    }
+
+    .inline-link a {
+    display: inline; /* override any block style */
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    }
   </style>
 </head>
 <body>
   <img src="logo.png" alt="AxionReach Logo" class="logo" />
   <p>We use cutting-edge technology to generate warm leads for businesses.</p>
   <p><strong>Minimal effort. Pay-per-performance.</strong></p>
-  <div><span>✉️</span> <a href="mailto:info@axionreach.com">info@axionreach.com</a></div>
-  <div><span>🥁</span> <a href="https://your-intake-form-link.com">Intake form</a></div>
+  <div class="inline-link">
+    <span>✉️</span>
+    <a href="mailto:info@axionreach.com">info@axionreach.com</a>
+  </div>
+  
+  <div class="inline-link">
+    <span>🥁</span>
+    <a href="https://your-intake-form-link.com">Intake form</a>
+  </div>
 </body>
 </html>

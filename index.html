@@ -5,67 +5,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AxionReach</title>
   <style>
-    body {
+    @font-face {
+      font-family: 'Nimbus Sans';
+      src: local('Nimbus Sans Regular'), local('NimbusSans-Regular'),
+           url('https://fonts.cdnfonts.com/s/14638/NimbusSanL-Reg.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    html, body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #3f69e8;
-      color: white;
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Nimbus Sans', sans-serif;
+      background-color: #3c56ff;
+      color: #ffffff;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      text-align: center;
-      padding: 20px;
-    }
-    img.logo {
-      width: 240px;
-      margin-bottom: 30px;
-    }
-    h1 {
-      margin: 0 0 20px 0;
-    }
-    p {
-      font-size: 1.2rem;
-      margin: 0 0 10px 0;
-    }
-    a {
-      color: #ffffff;
-      text-decoration: underline;
-      font-weight: bold;
-      display: block;
-      margin: 6px 0;
-    }
-    a:hover {
-      opacity: 0.8;
-    }
-    .inline-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    margin: 10px 0;
+      padding: 40px 20px;
+      min-height: 100vh;
+      box-sizing: border-box;
     }
 
-    .inline-link a {
-    display: inline; /* override any block style */
-    text-decoration: underline;
-    color: white;
-    font-weight: bold;
+    .header {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 1.2rem;
+      font-weight: normal;
+    }
+    .header strong {
+      font-weight: bold;
+    }
+
+    .logo {
+      width: 240px;
+      margin-bottom: 32px;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: normal;
+      text-align: center;
+      max-width: 900px;
+    }
+    h1 strong {
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      text-align: center;
+      margin: 0;
+      color: #eae9e9;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 350;
+      text-align: center;
+      margin: 0;
+      color: #d4d2d2;
+    }
+    .cta {
+      display: flex;
+      gap: 12px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .cta a {
+      text-decoration: none;
+      padding: 12px 24px;
+      background-color: #ffa545;
+      color: rgb(70, 70, 70);
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .cta a.secondary {
+      background-color: #f3f3f3;
+      color: #111;
+    }
+    .note {
+      margin-top: 12px;
+      font-size: 0.9rem;
+      color: red;
+      text-align: center;
+    }
+    .logos {
+      margin-top: 48px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+    }
+    .logos img {
+      height: 40px;
+      object-fit: contain;
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="AxionReach Logo" class="logo" />
-  <p>We use cutting-edge technology to generate warm leads for businesses.</p>
-  <p><strong>Minimal effort. Pay-per-performance.</strong></p>
-  <div class="inline-link">
-    <span>✉️</span>
-    <a href="mailto:info@axionreach.com">info@axionreach.com</a>
+  <div class="header">Axion<strong>Reach</strong></div>
+
+  <h1>We deliver <strong>qualified leads</strong> to agencies.<strong>100% performance-based.</strong></h1>
+  <h2>$0 retainer. $0 upfront. You only pay for results.</h2>
+
+  <div class="cta">
+    <a href="#">Book a call</a>
+    <a href="#" class="secondary">See how it works</a>
   </div>
   
-  <div class="inline-link">
-    <span>🥁</span>
-    <a href="https://your-intake-form-link.com">Intake form</a>
+  <div class="logos">
+    <p>info@axionreach.com</p>
+    <p>© 2025 Axionreach</p>
   </div>
+
 </body>
 </html>
